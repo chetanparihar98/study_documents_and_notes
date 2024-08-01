@@ -1,0 +1,77 @@
+What is an API? 
+->Application Programming Interface, it is one way to abstractly run a program in an application
+using an interface that abstracts all the backend processing.
+
+Why are APIs great? 
+1. Users just need to use the program, they don't need to write it
+2. Platform independent (can be interacted using any platform)
+3. Upgrade safe
+
+Complexity Types: 
+1. Simple API -> Any browser based APIs that are easy to create
+2. Moderate/Complex API -> Generally, APIs created for Specific Applications or SaaS offerings
+   These are also very simple to create as they do the same underlying funtionality, business wants to give users
+   multiple options to reach to them
+
+API Details:
+1. Request is made
+2. Program is run
+3. Response is returned
+
+API Mashup: 
+-->APIs made from other APIs
+
+Web Service:
+1. Web = Internet, Service = API
+2. Webservices -> API that uses internet
+3. Webservices use XML or JSON format data over the internet
+4. REST, SOAP or XML/RPC protocols can be used to transfer data
+
+HTTP: 
+1. A protocol to transfer a web api request
+2. PARTS in a HTTP Request-> a. Start Line, b. Headers, c. Blank Lines, d. Body
+3. Start Line is mandatory
+4. Response contains the same parts
+5. Start Line contains
+      Request -> HTTP Version, METHOD, Folders/Parameters barring the HOST
+      Response-> HTTP Version, STATUS CODE
+6. Header contains
+      Request -> HOST, TOKEN
+      Response-> COOKIES
+7. Blank line (to separate the header and body)
+8. Body contains
+      Request -> Username, Password
+      Response-> HTML
+
+Start Line in detail: 
+1. Request -> 
+  Startline is called as Startline/Request Line
+  HTTP Version
+  METHOD (CRUD)
+  API PROGRAM FOLDER LOCATION (example: /search)
+  QUERY PARAMTERs
+  FORMAT: Method API-PROGRAM-FOLDER+PARAMETERS HTTP-Version (eg. GET/search?q=tuna HTTP/1.1)
+
+2. Reponse -> 
+  Startline is called as Startline/Response Line/Status Line
+  HTTP Version
+  STATUS CODE 
+      -->1xx (Informational Response)
+      -->2xx (Success)
+      -->3xx (Redirection)
+      -->4xx (Client Errors)
+      -->5xx (Server Errors)
+   FORMAT: HTTP-Version+Status-Code
+  
+Idempotence -> Can do as many times as u want and result stays the same (safe to repeat)
+Idempotent Methods -> GET, PUT, DELETE (POST is not idempotent)
+
+HTTP Headers in detail: 
+1. Request
+    
+
+2. Response
+
+
+
+
